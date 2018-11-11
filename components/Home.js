@@ -43,8 +43,16 @@ const Home =({router}) => (
                             style={{ margin: 15 }}
                         />
                     </TouchableOpacity>
+                    
                 </View>
-                
+                <View style={styles.container}>
+
+                    </View>
+                    <TouchableOpacity
+                        onPress = {() => router.replace.Search({},{type:'fade'})}
+                        style={styles.button}>
+                        <Text>Let's Eat!</Text>
+                    </TouchableOpacity>
             </View>
         </ImageBackground>
     </View>
@@ -75,6 +83,14 @@ const styles = StyleSheet.create({
         height:40,
         flexDirection:"row",
         justifyContent:"space-between"
+    },
+    button:{
+        marginTop:40,
+        height:50,
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:"#6ad843",
+        fontWeight: '100' 
     }
 })
 
