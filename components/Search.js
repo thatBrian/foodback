@@ -53,12 +53,15 @@ const Search = ({ router }) => (
                                         <Text style={{ fontSize: 15 }}>{card.protein}g</Text>
                                         <Text style={{ fontSize: 10 }}>PROTEIN</Text>
                                     </View>
+                                    <View style={{marginLeft: 30,flexDirection:"row"}}>
+                                        <Text style={{ fontSize: 30}}>{card.percentage}%</Text>
+                                        <Text style={{ fontSize: 15, alignSelf:"flex-end", marginBottom:5, marginLeft: 5}}>Match!</Text>
+                                    </View>
                                 </View>
                             </View>
                             <TouchableOpacity
-                                style={styles.button}
-                            >
-                                <Text>PICK THIS</Text>
+                                style={styles.button}>
+                                <Text>$ {card.price}</Text>
                             </TouchableOpacity>
                         </View>
                     )

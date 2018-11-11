@@ -10,6 +10,7 @@ const data = [
         distance: 0.06,
         time:1,
         percentage:86,
+        price:14.99, 
         img:require('../src/img/1.jpg')
     },
     // {
