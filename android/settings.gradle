@@ -1,0 +1,3 @@
+rootProject.name = 'foodback'
+
+include ':app'
