@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, StyleSheet, ImageBackground, TextInput, TouchableOpacity, Text } from 'react-native';
+import { View, StyleSheet, ImageBackground, TextInput, TouchableOpacity, Text, Image} from 'react-native';
 
 const Login = ({ router }) => (
     <View style={styles.container}>
         <ImageBackground resizeMode='cover' source={require('../src/img/Background.png')} style={{ width: '100%', height: '100%' }}>
             <View style={styles.overlay}>
                 <View style={styles.top}>
-                <View style={styles.container}></View>
+                <View style={styles.logoContainer}>
+                    <Image resizeMode="contain" style={{ height:150, width:150}}source={require('../src/img/logo.png')}/>
+                </View>
                 <View style={styles.title}>
                     <Text style={{letterSpacing:5,fontSize:50,fontWeight:"500", color:"white"}}>food</Text>
                     <Text style={{letterSpacing:5,fontSize:50,fontWeight:"500", color:"#6ad843"}}>swap</Text>
@@ -26,12 +28,12 @@ const Login = ({ router }) => (
                         autoCorrect={false}
                     />
                     <TouchableOpacity 
-                    onPress = {() => router.replace.Home({},{type:'fade'})}
+                    onPress = {() => router.push.Home({},{type:'fade'})}
                     style={styles.buttonLogin}>
                         <Text style={{color:"black"}}>L O G I N</Text>
                     </TouchableOpacity>
                     <TouchableOpacity 
-                    onPress = {() => router.replace.Signup({},{type:'fade'})}
+                    onPress = {() => router.push.Signup({},{type:'fade'})}
                     style={styles.buttonSignup}>
                         <Text style={{color:"white"}}>S I G N  U P</Text>
                     </TouchableOpacity>
@@ -86,6 +88,11 @@ const styles = StyleSheet.create({
         backgroundColor:"black",
         fontWeight: '100' 
     },
+    logoContainer:{
+        alignItems:'center', 
+        justifyContent:'flex-end',
+        flex:1,
+    }
 })
 
 

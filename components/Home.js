@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, Image, Alert, View, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import GoogleStaticMap from 'react-native-google-static-map';
-
+import key from './api';
 const Home = ({ router }) => (
     <View style={styles.container}>
         <ImageBackground resizeMode='cover' source={require('../src/img/Background.png')} style={{ width: '100%', height: '100%' }}>
@@ -82,7 +82,7 @@ const Home = ({ router }) => (
                             longitude={'-74.0072722'}
                             zoom={13}
                             size={{ width: 300, height: 550 }}
-                            apiKey={'AIzaSyBeWcVkl8kxqTdbvNjQfAtvJ0SlfBeXSEQ'}
+                            apiKey={key}
                         />
                     </View>
                     <TouchableOpacity
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     map: {
-        marginTop:10,
+        marginTop:20,
         flex: 1
 
     }

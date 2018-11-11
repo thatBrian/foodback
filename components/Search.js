@@ -7,6 +7,7 @@ const Search = ({ router }) => (
     <View style={styles.container}>
         <ImageBackground resizeMode='cover' source={require('../src/img/Background.png')} style={{ width: '100%', height: '100%' }}>
             <Swiper
+                infinite={true}
                 cards={data}
                 renderCard={(card) => {
                     return (
