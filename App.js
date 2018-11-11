@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Signup from './components/Signup';
 
  
-const routes = { Login, Home, Signup }
+const routes = { Login, Home, Signup, Search }
 const App = () => <Router 
 routes={routes} 
 initialRoute="Login"/>

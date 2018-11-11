@@ -8,8 +8,8 @@ const Login = ({ router }) => (
                 <View style={styles.top}>
                 <View style={styles.container}></View>
                 <View style={styles.title}>
-                    <Text style={{fontSize:50,fontWeight:"500", color:"white"}}>food</Text>
-                    <Text style={{fontSize:50,fontWeight:"500", color:"#6ad843"}}>swap</Text>
+                    <Text style={{letterSpacing:5,fontSize:50,fontWeight:"500", color:"white"}}>food</Text>
+                    <Text style={{letterSpacing:5,fontSize:50,fontWeight:"500", color:"#6ad843"}}>swap</Text>
                 </View>
                 </View>
                 <View style={styles.bottom}>
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
         marginHorizontal: 60,
     },
     input: {
-        borderBottomWidth: 20,
         borderBottomColor: 'white',
         borderBottomWidth: 1,
         color: 'white',
